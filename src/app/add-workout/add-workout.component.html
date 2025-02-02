@@ -1,0 +1,45 @@
+<!-- <div class="main" >
+    <div class="mainleft" >
+        </div>
+    <div class="right" >
+        Name:<input type="text" value="" placeholder="Enter your name" class="enter form-control" id="workoutName" [(ngModel)]="workoutName"><br>
+        workout type:
+        <select name="workot" class="enter" [(ngModel)]="workot">
+            <option value="volvo">GYM</option>
+            <option value="saab">Yoga</option>
+            <option value="mercedes">Cycling</option>
+            <option value="audi">Running</option>
+        </select><br>
+        workout Minutes:<input type="number" id="duration" [(ngModel)]="duration" name="duration" value="" placeholder="Enter Duration" class="enter form-control"><br><br>
+        
+    <button type="button" (click)="addWorkout()" class="btn btn-primary" class="submit">Add Workout</button>
+    </div>
+</div>
+  
+  
+   -->
+   <div class="main">
+    <div class="mainleft"></div>
+    <div class="right">
+        <label>Name:</label>
+        <input type="text" [(ngModel)]="workoutName" name="workoutName" 
+            placeholder="Enter your name" class="enter form-control" id="workoutName">
+        <br>
+
+        <label>Workout Type:</label>
+        <select [(ngModel)]="workoutType" name="workoutType" class="enter form-control">
+            <option value="GYM">GYM</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Running">Running</option>
+        </select>
+        <br>
+
+        <label>Workout Minutes:</label>
+        <input type="number" [(ngModel)]="duration" name="duration" 
+            placeholder="Enter Duration" class="enter form-control">
+        <br><br>
+
+        <button type="button" (click)="addWorkout()" class="btn submit">Add Workout</button>
+    </div>
+</div>

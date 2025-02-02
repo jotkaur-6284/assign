@@ -1,0 +1,11 @@
+
+<div class="container">
+    <h2>Workout Progress</h2>
+  
+    <label>All user by Name:</label>
+      <option *ngFor="let workout of workouts" [value]="workout.name">
+        {{ workout.name }}
+      </option>
+
+<canvas id="workoutChart"></canvas>
+</div>    
